@@ -2,7 +2,7 @@
 
 
 int main() {
-      // ======= Declaração das variáveis =======
+      // Declaração das variáveis
     
     // Carta 1
     char estado1;
@@ -37,10 +37,10 @@ int main() {
     int compPIBPerCapita;
     int compSuperPoder;
     
-    // ======= Mensagem de boas-vindas =======
+    // Mensagem de boas-vinda
     printf("=== SUPER TRUNFO DE PAÍSES - BATALHA DE CARTAS ===\n\n");
     
-    // ======= CARTA 1 =======
+    // CARTA 1 
     printf("CADASTRO DA CARTA 1:\n");
     printf("Digite o Estado (letra de A a H): ");
     scanf(" %c", &estado1);
@@ -67,7 +67,7 @@ int main() {
     densidadePopulacional1 = (float)populacao1 / area1;
     pibPerCapita1 = (pib1 * 1000000000.0) / (float)populacao1;
     
-    // ======= CARTA 2 =======
+    // CARTA 2 
     printf("\nCADASTRO DA CARTA 2:\n");
     printf("Digite o Estado (letra de A a H): ");
     scanf(" %c", &estado2);
@@ -112,7 +112,7 @@ int main() {
     compPIBPerCapita = (pibPerCapita1 > pibPerCapita2) ? 1 : 0;
     compSuperPoder = (superPoder1 > superPoder2) ? 1 : 0;
     
-    // ======= EXIBIÇÃO DOS DADOS DAS CARTAS =======
+    // EXIBIÇÃO DOS DADOS DAS CARTAS 
     printf("\n=== DADOS DA CARTA 1 ===\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -137,7 +137,7 @@ int main() {
     printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
     printf("Super Poder: %.2f\n", superPoder2);
     
-    // ======= EXIBIÇÃO DOS RESULTADOS DAS COMPARAÇÕES =======
+    // EXIBIÇÃO DOS RESULTADOS DAS COMPARAÇÕES
     printf("\n=== COMPARAÇÃO DE CARTAS ===\n");
     printf("População: Carta %d venceu (%d)\n", compPopulacao ? 1 : 2, compPopulacao);
     printf("Área: Carta %d venceu (%d)\n", compArea ? 1 : 2, compArea);
